@@ -13,4 +13,5 @@ const productosEjemplo = [
   Producto(id: 8, nombre: 'Menu durum', descripcion: 'Menu durum, bebida, patatas pequeñas doble salsa amigo.', precio: 9.00, categoria: 'Menu'),
   Producto(id: 9, nombre: 'Menu pita', descripcion: 'Menu pita, bebida, patatas pequeñas doble salsa amigo.', precio: 8.00, categoria: 'Menu'),
   Producto(id: 10, nombre: 'Menu kebabox', descripcion: 'Menu kebabox, bebida doble salsa amigo.', precio: 7.00, categoria: 'Menu'),
+  Producto(id: 11, nombre: 'Rata', descripcion: '¿Como llego esto aqui amigo?', precio: 2.00, categoria: 'Rata'),
 ];
