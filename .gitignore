@@ -12,6 +12,11 @@
 .swiftpm/
 migrate_working_dir/
 
+./windows/Flutter/generated_plugin_registrant.cc
+./windows/Flutter/generated_plugin_registrant.h
+./windows/Flutter/generated_plugin.cmake
+./pubspec.lock
+
 # IntelliJ related
 *.iml
 *.ipr
