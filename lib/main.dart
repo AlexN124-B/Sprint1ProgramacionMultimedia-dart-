@@ -14,7 +14,7 @@ class ComercioApp extends StatelessWidget {
     return MaterialApp(
       title: 'Kebab Amigo',
       theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.redAccent)),
-      home: const CatalogoScreen(),
+      home: CatalogoScreen(),
     );
   }
 }
