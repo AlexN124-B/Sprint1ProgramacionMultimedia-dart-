@@ -7,7 +7,7 @@ import '../data/productos_ejemplo.dart';
 /// Por ahora solo comprueba que los datos se leen bien.
 /// En la sesión 2 de la UT2 se convierte en una lista con ListView.builder.
 class CatalogoScreen extends StatefulWidget {
-  const CatalogoScreen({super.key});
+  CatalogoScreen({super.key});
 
   @override
   State<CatalogoScreen> createState() => _CatalogoScreenState();
