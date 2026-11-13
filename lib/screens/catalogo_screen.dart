@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/producto_tile.dart';
+import '../screens/detalle_screen.dart';
 import '../models/producto.dart';
 import '../data/productos_ejemplo.dart';
 
@@ -16,10 +17,10 @@ class CatalogoScreen extends StatefulWidget {
 class _CatalogoScreenState extends State<CatalogoScreen> {
   final List<Producto> _productos = [...productosEjemplo];
   void _abrirDetalle(Producto p) {
-    // Navigator.push(
-      // context,
-      // MaterialPageRoute(builder: (_) => DetalleScreen(producto: p)),
-    // );
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (_) => DetalleScreen(producto: p)),
+    );
   }
 
     @override
