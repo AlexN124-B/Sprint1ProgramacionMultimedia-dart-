@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import '../screens/pedido_screen.dart';
 import '../models/producto.dart';
 
 
@@ -22,7 +22,15 @@ class DetalleScreen extends StatelessWidget{
             const SizedBox(height: 8),
             Text(_producto.precioTexto, 
               style: Theme.of(context).textTheme.headlineMedium,
-            )
+            ),
+            FilledButton.icon(
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => PedidoScreen(producto: producto)),
+              ),
+              icon: const Icon(Icons.shopping_basket),
+              label: const Text('Hacer pedido'),
+            ),
           ],
         ),
       ),
