@@ -26,7 +26,7 @@ class DetalleScreen extends StatelessWidget{
             FilledButton.icon(
               onPressed: () => Navigator.push(
                 context,
-                MaterialPageRoute(builder: (_) => PedidoScreen(producto: producto)),
+                MaterialPageRoute(builder: (_) => PedidoScreen(producto: _producto)),
               ),
               icon: const Icon(Icons.shopping_basket),
               label: const Text('Hacer pedido'),
