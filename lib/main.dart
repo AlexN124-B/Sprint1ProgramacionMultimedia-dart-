@@ -4,8 +4,7 @@ import 'screens/catalogo_screen.dart';
 
 void main() => runApp(const ComercioApp());
 
-/// Raíz de la app del comercio.
-// TODO (equipo): cambia el título y el color por los de vuestro comercio. completado
+
 class ComercioApp extends StatelessWidget {
   const ComercioApp({super.key});
 
