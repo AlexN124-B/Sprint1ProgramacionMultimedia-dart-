@@ -10,17 +10,18 @@ class DetalleScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Icon(Icons.arrow_back)),
-      body: Center(
-        child: Row(
-          spacing: 8,
+      appBar: AppBar(title: Text(_producto.nombre),),
+      body: Padding(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Column(
-              children: [
-                Text(_producto.nombre, style: TextStyle(fontSize: 20)),
-                Text(_producto.categoria, style: TextStyle(fontSize: 10),)
-
-              ],
+            Text(_producto.categoria),
+            const SizedBox(height: 8),
+            Text(_producto.descripcion),
+            const SizedBox(height: 8),
+            Text(_producto.precioTexto, 
+              style: Theme.of(context).textTheme.headlineMedium,
             )
           ],
         ),
