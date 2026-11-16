@@ -13,13 +13,13 @@ class PedidoScreen extends StatefulWidget{
 
 class _PedidoScreen extends State<PedidoScreen>{
   double _cantidad = 1;     
-  bool _regalo = false;     
+  bool _servilletas = false;     
   bool _domicilio = false;  
 
 
   double get _total {
     double total = widget.producto.precio * _cantidad;
-    if (_regalo) total = total + 0.50;
+    if (_servilletas) total = total + 0.50;
     if (_domicilio) total = total + 2.0 ;
     return total;
   }
@@ -65,9 +65,9 @@ class _PedidoScreen extends State<PedidoScreen>{
             onChanged: (v) => setState(() => _cantidad = v),
           ),
           CheckboxListTile(
-            title: const Text('Envolver para regalo (+0.50 €)'),
-            value: _regalo,
-            onChanged: (v) => setState(() => _regalo = v ?? false),
+            title: const Text('Servilletas (+0.50 €)'),
+            value: _servilletas,
+            onChanged: (v) => setState(() => _servilletas = v ?? false),
           ),
           SwitchListTile(
             title: const Text('Envío a domicilio (+2.00 €)'),
