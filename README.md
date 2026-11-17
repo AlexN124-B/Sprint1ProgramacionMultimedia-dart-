@@ -1,4 +1,4 @@
-# [Nombre de la app]
+# App KebabBrotherAmigo
 
 **Comercio:**  Kebab amigo - Comida Rápida - Comercio Inventado <br>
 **Equipo:** Alejandro Nuñez - Sebastian Stancu <br>
