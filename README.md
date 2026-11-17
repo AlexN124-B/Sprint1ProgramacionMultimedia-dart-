@@ -64,5 +64,5 @@ flutter run
 |          |             |                   |       |
 
 ## Declaración del uso de IA
-
+Se ha usado claude en la versión web pero únicamente para solucionar errores como por ejemplo: una excepción capturada por el propio flutter
 [Indicad si habéis usado alguna herramienta de IA, para qué y en qué partes. Si no, escribid «No se ha usado IA».]
