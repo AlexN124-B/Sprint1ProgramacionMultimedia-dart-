@@ -29,13 +29,13 @@ flutter run
 
 ## Estructura y clases
 
-| Clase           | Carpeta | Hereda de       | Qué hace                        | Autor/a |
-|-----------------|---------|-----------------|---------------------------------|---------|
-| ProductosEjemplo| models  | —               | Guarda los datos de un producto |Alejandro|
-| Producto        | data    | —               | Guarda el mock de los datos     |Alejandro|
-| CatalogoScreen  | screens | StatelessWidget | Muestra la lista de productos   |Sebastian|
-| DetalleScreen   | screens | StatelessWidget | Muestra el detalle del producto |Alejandro|
-
+| Clase                | Carpeta | Hereda de       | Qué hace                        | Autor/a |
+|----------------------|---------|-----------------|---------------------------------|---------|
+| ProductosEjemplo     | models  | —               | Guarda los datos de un producto |Alejandro|
+| Producto             | data    | —               | Guarda el mock de los datos     |Alejandro|
+| CatalogoScreen       | screens | StatelessWidget | Muestra la lista de productos   |Sebastian|
+| DetalleScreen        | screens | StatelessWidget | Muestra el detalle del producto |Alejandro|
+| NuevoProductoScreen  | screens | StatefulWidget  | Formulario nuevo producto       |Sebastian|
 ## Reparto del trabajo
 
 | Persona | Tareas del sprint 1 | Rama |
