@@ -5,7 +5,7 @@ class Producto {
   final String nombre;
   final String descripcion;
   final double precio;
-  final Categorias categoria;
+  final Categorias? categoria;
 
   const Producto({
     required this.id,
