@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/producto_tile.dart';
 import '../screens/detalle_screen.dart';
+import '../screens/nuevo_producto_screen.dart';
 import '../models/producto.dart';
 import '../data/productos_ejemplo.dart';
 

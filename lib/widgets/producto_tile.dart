@@ -21,7 +21,7 @@ class ProductoTile extends StatelessWidget {
     return ListTile(
       leading: CircleAvatar(child: Text(producto.nombre[0])),
       title: Text(producto.nombre),
-      subtitle: Text(producto.categoria),
+      subtitle: Text(producto.categoria.toString()),
       trailing: Text(producto.precioTexto),
       onTap: onTap,
       onLongPress: onLongPress,
