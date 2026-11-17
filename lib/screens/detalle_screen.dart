@@ -16,7 +16,7 @@ class DetalleScreen extends StatelessWidget{
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(_producto.categoria),
+            Text(_producto.categoria.toString()),
             const SizedBox(height: 8),
             Text(_producto.descripcion),
             const SizedBox(height: 8),

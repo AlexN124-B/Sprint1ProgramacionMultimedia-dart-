@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/producto_tile.dart';
 import '../screens/detalle_screen.dart';
+import '../screens/nuevo_producto_screen.dart';
 import '../models/producto.dart';
 import '../data/productos_ejemplo.dart';
 
@@ -22,6 +23,16 @@ class _CatalogoScreenState extends State<CatalogoScreen> {
       MaterialPageRoute(builder: (_) => DetalleScreen(producto: p)),
     );
   }
+  Future<void> _nuevo() async {
+    final nuevo = await Navigator.push<Producto>(
+      context,
+      MaterialPageRoute(builder: (_) => const NuevoProductoScreen()),
+    );
+    if (nuevo != null) {
+      setState(() => _productos.add(nuevo));
+    }
+  }
+
   void _alElegirOpcion(String opcion) {
     switch (opcion) {
       case 'nombre':
@@ -87,6 +98,11 @@ class _CatalogoScreenState extends State<CatalogoScreen> {
             onLongPress: () => _confirmarBorrado(_productos[i]),
           )
           ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _nuevo,
+        tooltip: "Nuevo producto",
+        child: const Icon(Icons.add_circle_outline_outlined),
       ),
     );
   }

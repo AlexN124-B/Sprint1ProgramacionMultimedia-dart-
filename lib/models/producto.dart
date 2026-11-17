@@ -5,7 +5,7 @@ class Producto {
   final String nombre;
   final String descripcion;
   final double precio;
-  final String categoria;
+  final Categorias? categoria;
 
   const Producto({
     required this.id,
@@ -17,4 +17,12 @@ class Producto {
 
   /// Precio con el formato que se muestra en pantalla, por ejemplo «3.20 €».
   String get precioTexto => '${precio.toStringAsFixed(2)} €';
+}
+
+enum Categorias{
+  rata,
+  pita,
+  menu,
+  durum,
+  kebabox
 }
